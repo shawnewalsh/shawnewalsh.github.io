@@ -1,0 +1,109 @@
+.grid {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-gap: 1em;
+  }
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("header-background.jfif")  no-repeat center #eee;
+    object-fit: cover;
+    background-size: cover;
+    color: white;
+    font-size: 50px;
+    border-radius: 5%;
+    
+  }
+  
+  header, footer {
+    grid-column: 1 / 4;
+  }
+  
+  @media all and (max-width: 700px) {
+    aside,
+    article {
+      grid-column: 1 / 4;
+    }
+  }
+  
+  /* Demo Specific Styles */
+  body {
+    margin: 0 auto;
+    max-width: 56em;
+    padding: 1em 0;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("background-image.jpg");
+  }
+  
+  a:link {
+    color:aquamarine
+  }
+  a:visited {
+    color:aqua;
+  }
+
+  header,
+  aside,
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+
+  .sidebar-left {
+    background-color: rgb(14, 1, 1);
+    border-radius: 5px;
+    font-size: x-large;
+    color:aliceblue;
+  }
+
+  .article {
+    background-color: rgb(27, 26, 26);
+    border-radius: 5px;
+    align-items: left;
+    color:aliceblue;
+    font-size: larger;
+  }
+
+  header,
+  aside,
+  article,
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 37vh;
+  }
+  .footer {
+    color:aliceblue;
+
+  }
+
+  .sidebar-right {
+    justify-content: center;
+  }
+  ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+  }
+
+  li::before {
+    content: "./"; /* Insert content that looks like bullets */
+    padding-right: 8px;
+    color: blue; 
+  }
+
+  .profile-pic {
+  width:150px;
+  height:180px; 
+  border-radius: 50%;
+  }
+
+  .article-projects {
+    border-radius: 5px;
+    align-items: left;
+    color:aliceblue;
+    font-size: larger;
+  }
+  
+  .projects-table {
+    color:aliceblue;
+  }
